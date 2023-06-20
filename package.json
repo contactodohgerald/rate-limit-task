@@ -1,0 +1,28 @@
+{
+  "name": "rate-limit-task",
+  "version": "1.0.0",
+  "description": "task on rate limit with redis",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev --poll src/server.ts",
+    "build": "rimraf dist/ && tsc",
+    "start": "npm run build && node dist/server.js"
+  },
+  "author": "xanta-codes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "rimraf": "^5.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.3"
+  }
+}

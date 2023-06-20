@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  api:
+    build: 
+      context: .
+      target: production
+    ports:
+      - 7070:7070
+    command: npm start    
